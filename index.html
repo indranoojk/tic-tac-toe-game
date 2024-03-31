@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html> 
+	
+<head> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<!-- CSS file Included -->
+	<link rel="stylesheet" type="text/css" href="tic.css"> 
+	<!-- JavaScript file included -->
+	<script src="game.js"></script> 
+</head> 
+
+<body> 
+	<div id="main"> 
+		<h1>TIC-<span style="color:red">TAC</span>-TOE GAME</h1> 
+		<p id="ins"> 
+			Game starts by just Tap on 
+			box<br><br>
+            <p>Players can choose either "<span style="color:red">X</span>" or "<span style="color:red">O</span>"</p>
+		</p> 
+		<br><br> 
+		<div class = "ui"> 
+			<div class="row"> 
+				<input type="text" id= "b1"
+					class="cell" onclick=" block_3();  block();"
+					 > 
+				<input type="text" id= "b2"
+					class="cell" onclick=" block_4();  block();"
+					 > 
+				<input type="text" id= "b3" class="cell"
+					onclick=" block_5();  block();"
+					 > 
+			</div> 
+			<div class="row"> 
+				<input type="text" id= "b4"
+					class="cell" onclick=" block_6();  block();"
+					 > 
+				<input type="text" id= "b5"
+					class="cell" onclick=" block_7();  block();"
+					 > 
+				<input type="text" id= "b6"
+					class="cell" onclick=" block_8();  block();"
+					 > 
+			</div> 
+			<div class="row"> 
+				<input type="text" id= "b7"
+					class="cell" onclick=" block_9();  block();"
+					 > 
+				<input type="text" id= "b8"
+					class="cell" onclick=" block_10(); block();"
+					 > 
+				<input type="text" id= "b9"
+					class="cell" onclick=" block_11(); block();"
+					 > 
+			</div> 
+		</div> 
+		<br><br><br> 
+		
+		<button id="but" onclick=" block_2()"> 
+			RESET 
+		</button> 
+		<br><br> 
+		<p id="print"></p> 
+	</div> 
+</body> 
+
+</html>
